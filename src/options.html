@@ -1,52 +1,447 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
+  <link href="styles/popup.css" rel="stylesheet">
   <link href="styles/options.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Options & Settings</title>
 </head>
-<body class="wrap">
-  <div class="grid">
-    <div class="unit whole center-on-mobiles">
-      <div class="heading">
-        <h1>Extension Boilerplate</h1>
-        <p class="lead">A foundation for creating cross-browser extensions</p>  
-      </div>
-    </div>
-  </div>
-  
-  <section class="content">
-    <div class="grid">
-      <div class="unit whole center-on-mobiles">
-        <div class="option">
-          <h5>Popup color</h5>  
-          <div class="radio-group">
-            <label><input class="js-radio white" type="radio" name="radio" value="white">White</label>
-            <label><input class="js-radio beige" type="radio" name="radio" value="beige">Beige</label>
-            <label><input class="js-radio lavender" type="radio" name="radio" value="lavender">Lavender</label>
-          </div>
-        </div>
-        
-        <div class="option">
-          <em class="text-muted">...display your extensions' options here...</em>
-        </div>
 
-      </div>
-    </div>  
-  </section>
-  
-  
-  <footer class="main-footer">
-    <div class="grid">
-      <div class="unit whole center-on-mobiles">
-        <p class="text-center text-muted">
-          &copy; Extension Boilerplate
-        </p>
-      </div>
+<body class="pa3 bg-moon-gray near-black">
+  <div id="app" class="mw9 center">
+    <div class="tc w-100">
+      <img src="icons/brands128.png" class="center" />
     </div>
-  
-  </footer>
+
+    <section>
+
+      <div class="pa4 shadow-4 mv3 bg-near-white">
+        <div class="overflow-auto">
+           <h4 class="center">Brands Web sale banner helper</h4>
+          <p>This helper is just an overview for the Brands sales options</p>
+          <a class="f6 link dim br3 ba bw1 ph3 pv2 mb2 dib black bg-white fr " href="http://confluence.cartrawler.com/pages/viewpage.action?pageId=9439840" target="_blank">View Confluence</a>
+        </div>
+      </div>
+
+      <div class="shadow-4">
+        <div class="overflow-auto">
+          <table class="f6 w-100 center bg-near-white" cellspacing="0">
+            <thead>
+              <tr class="stripe-dark">
+                <th class="fw6 tl pa3 bg-white">Scenario</th>
+                <th class="fw6 tl pa3 bg-white">Banner flag</th>
+                <th class="fw6 tl pa3 bg-white">Display flag</th>
+                <th class="fw6 tl pa3 bg-white">Holiday Autos</th>
+                <th class="fw6 tl pa3 bg-white">Argus car hire</th>
+              </tr>
+            </thead>
+            <tbody class="lh-copy">
+              <tr class="stripe-dark">
+                <td class="pa3">Step2 with Banner 1</td>
+                <td class="pa3">displayBanner=Banner1</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/book?displayBanner=Banner1&pickupDateTime=2018-04-11T10%3A00&returnDateTime=2018-04-19T10%3A00&age=30&clientID=463949&ct=MP&countryID=IE&curr=SEK&elID=311522874860806&ln=sv&pickupCountryCode=IE&residenceID=IE&returnCountryCode=IE&pickupID=11&pickupName=Dublin%20flygplats&returnID=11&returnName=Dublin%20flygplats#/vehicles"
+                    target="_blank">Deeplink &displayBanner=Banner1</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/book?displayBanner=Banner1&pickupDateTime=2018-04-11T10%3A00&returnDateTime=2018-04-19T10%3A00&age=30&clientID=463949&ct=MP&countryID=IE&curr=SEK&elID=311522874860806&ln=sv&pickupCountryCode=IE&residenceID=IE&returnCountryCode=IE&pickupID=11&pickupName=Dublin%20flygplats&returnID=11&returnName=Dublin%20flygplats#/vehicles"
+                    target="_blank">Deeplink &displayBanner=Banner1</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Step2 with Banner 2</td>
+                <td class="pa3">displayBanner=Banner2</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/book?displayBanner=Banner2&pickupDateTime=2018-04-11T10%3A00&returnDateTime=2018-04-19T10%3A00&age=30&clientID=463949&ct=MP&countryID=IE&curr=SEK&elID=311522874860806&ln=sv&pickupCountryCode=IE&residenceID=IE&returnCountryCode=IE&pickupID=11&pickupName=Dublin%20flygplats&returnID=11&returnName=Dublin%20flygplats#/vehicles"
+                    target="_blank">Deeplink &displayBanner=Banner2</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/book?displayBanner=Banner2&pickupDateTime=2018-04-11T10%3A00&returnDateTime=2018-04-19T10%3A00&age=30&clientID=463949&ct=MP&countryID=IE&curr=SEK&elID=311522874860806&ln=sv&pickupCountryCode=IE&residenceID=IE&returnCountryCode=IE&pickupID=11&pickupName=Dublin%20flygplats&returnID=11&returnName=Dublin%20flygplats#/vehicles"
+                    target="_blank">Deeplink &displayBanner=Banner2</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Step2 with Banner 3</td>
+                <td class="pa3">displayBanner=Banner3</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/book?displayBanner=Banner3&pickupDateTime=2018-04-11T10%3A00&returnDateTime=2018-04-19T10%3A00&age=30&clientID=463949&ct=MP&countryID=IE&curr=SEK&elID=311522874860806&ln=sv&pickupCountryCode=IE&residenceID=IE&returnCountryCode=IE&pickupID=11&pickupName=Dublin%20flygplats&returnID=11&returnName=Dublin%20flygplats#/vehicles"
+                    target="_blank">Deeplink &displayBanner=Banner3</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/book?displayBanner=Banner3&pickupDateTime=2018-04-11T10%3A00&returnDateTime=2018-04-19T10%3A00&age=30&clientID=463949&ct=MP&countryID=IE&curr=SEK&elID=311522874860806&ln=sv&pickupCountryCode=IE&residenceID=IE&returnCountryCode=IE&pickupID=11&pickupName=Dublin%20flygplats&returnID=11&returnName=Dublin%20flygplats#/vehicles"
+                    target="_blank">Deeplink &displayBanner=Banner3</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Step2 with no Banner</td>
+                <td class="pa3">displayBanner=noBanner</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/book?displayBanner=noBanner&pickupDateTime=2018-04-11T10%3A00&returnDateTime=2018-04-19T10%3A00&age=30&clientID=463949&ct=MP&countryID=IE&curr=SEK&elID=311522874860806&ln=sv&pickupCountryCode=IE&residenceID=IE&returnCountryCode=IE&pickupID=11&pickupName=Dublin%20flygplats&returnID=11&returnName=Dublin%20flygplats#/vehicles"
+                    target="_blank">Deeplink &displayBanner=noBanner</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/book?displayBanner=noBanner&pickupDateTime=2018-04-11T10%3A00&returnDateTime=2018-04-19T10%3A00&age=30&clientID=463949&ct=MP&countryID=IE&curr=SEK&elID=311522874860806&ln=sv&pickupCountryCode=IE&residenceID=IE&returnCountryCode=IE&pickupID=11&pickupName=Dublin%20flygplats&returnID=11&returnName=Dublin%20flygplats#/vehicles"
+                    target="_blank">Deeplink &displayBanner=noBanner</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Email landing page with Banner 1</td>
+                <td class="pa3">displayBanner=Banner1</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/en-us/travelzoo?displayBanner=Banner1" target="_blank">https://staging.holidayautos.com/en-us/travelzoo?displayBanner=Banner1</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/1emaillanding/123?displayBanner=Banner1" target="_blank">https://staging.arguscarhire.com/1emaillanding/123?displayBanner=Banner1</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Email landing page with Banner 2</td>
+                <td class="pa3">displayBanner=Banner2</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/en-us/travelzoo?displayBanner=Banner2" target="_blank">https://staging.holidayautos.com/en-us/travelzoo?displayBanner=Banner2</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/1emaillanding/123?displayBanner=Banner2" target="_blank">https://staging.arguscarhire.com/1emaillanding/123?displayBanner=Banner2</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Email landing page with Banner 3</td>
+                <td class="pa3">displayBanner=Banner3</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/en-us/travelzoo?displayBanner=Banner3" target="_blank">https://staging.holidayautos.com/en-us/travelzoo?displayBanner=Banner3</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/1emaillanding/123?displayBanner=Banner3" target="_blank">https://staging.arguscarhire.com/1emaillanding/123?displayBanner=Banner3</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Email landing page with no Banner</td>
+                <td class="pa3">displayBanner=noBanner</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/en-us/travelzoo?displayBanner=noBanner" target="_blank">https://staging.holidayautos.com/en-us/travelzoo?displayBanner=noBanner</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/1emaillanding/123?displayBanner=noBanner" target="_blank">https://staging.arguscarhire.com/1emaillanding/123?displayBanner=noBanner</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Smartphone with Banner 1</td>
+                <td class="pa3">displayBanner=Banner1</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner1" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner1</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner1" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner1</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage full-height engine with Banner 1</td>
+                <td class="pa3">displayBanner=Banner1</td>
+                <td class="pa3">displayType=fullheightEngine</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner1&displayType=fullheightEngine" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner1&displayType=fullheightEngine</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner1&displayType=fullheightEngine" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner1&displayType=fullheightEngine</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage normal engine with Banner 1</td>
+                <td class="pa3">displayBanner=Banner1</td>
+                <td class="pa3">displayType=normalEngine</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner1&displayType=normalEngine" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner1&displayType=normalEngine</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner1&displayType=normalEngine" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner1&displayType=normalEngine</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Smartphone with Banner 2</td>
+                <td class="pa3">displayBanner=Banner2</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner2" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner2</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner2" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner2</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage full-height engine with Banner 2</td>
+                <td class="pa3">displayBanner=Banner2</td>
+                <td class="pa3">displayType=fullheightEngine</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner2&displayType=fullheightEngine" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner2&displayType=fullheightEngine</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner2&displayType=fullheightEngine" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner2&displayType=fullheightEngine</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage normal engine with Banner 2</td>
+                <td class="pa3">displayBanner=Banner2</td>
+                <td class="pa3">displayType=normalEngine</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner2&displayType=normalEngine" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner2&displayType=normalEngine</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner2&displayType=normalEngine" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner2&displayType=normalEngine</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Smartphone with Banner 3</td>
+                <td class="pa3">displayBanner=Banner3</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner3" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner3</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner3" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner3</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage full-height engine with Banner 3</td>
+                <td class="pa3">displayBanner=Banner3</td>
+                <td class="pa3">displayType=fullheightEngine</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner3&displayType=fullheightEngine" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner3&displayType=fullheightEngine</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner3&displayType=fullheightEngine" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner3&displayType=fullheightEngine</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage normal engine with Banner 3</td>
+                <td class="pa3">displayBanner=Banner3</td>
+                <td class="pa3">displayType=normalEngine</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=Banner3&displayType=normalEngine" target="_blank">https://staging.holidayautos.com/?displayBanner=Banner3&displayType=normalEngine</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=Banner3&displayType=normalEngine" target="_blank">https://staging.arguscarhire.com/?displayBanner=Banner3&displayType=normalEngine</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Smartphone with no Banner</td>
+                <td class="pa3">displayBanner=noBanner</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=noBanner" target="_blank">https://staging.holidayautos.com/?displayBanner=noBanner</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=noBanner" target="_blank">https://staging.arguscarhire.com/?displayBanner=noBanner</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage full-height with no Banner</td>
+                <td class="pa3">displayBanner=noBanner</td>
+                <td class="pa3">displayType=fullheightEngine</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=noBanner&displayType=fullheightEngine" target="_blank">https://staging.holidayautos.com/?displayBanner=noBanner&displayType=fullheightEngine</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=noBanner&displayType=fullheightEngine" target="_blank">https://staging.arguscarhire.com/?displayBanner=noBanner&displayType=fullheightEngine</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage normal engine with no Banner</td>
+                <td class="pa3">displayBanner=noBanner</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayBanner=noBanner&displayType=normalEngine" target="_blank">https://staging.holidayautos.com/?displayBanner=noBanner&displayType=normalEngine</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayBanner=noBanner&displayType=normalEngine" target="_blank">https://staging.arguscarhire.com/?displayBanner=noBanner&displayType=normalEngine</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage with SVG display 1</td>
+                <td class="pa3"></td>
+                <td class="pa3">displayType=svgBanner1</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayType=svgBanner1" target="_blank">https://staging.holidayautos.com/?displayType=svgBanner1</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayType=svgBanner1" target="_blank">https://staging.arguscarhire.com/?displayType=svgBanner1</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage with SVG display 2</td>
+                <td class="pa3"></td>
+                <td class="pa3">displayType=svgBanner2</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayType=svgBanner2" target="_blank">https://staging.holidayautos.com/?displayType=svgBanner2</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayType=svgBanner2" target="_blank">https://staging.arguscarhire.com/?displayType=svgBanner2</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Homepage with SVG display 3</td>
+                <td class="pa3"></td>
+                <td class="pa3">displayType=svgBanner3</td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/?displayType=svgBanner3" target="_blank">https://staging.holidayautos.com/?displayType=svgBanner3</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/?displayType=svgBanner3" target="_blank">https://staging.arguscarhire.com/?displayType=svgBanner3</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Affiliate landing with Banner 1</td>
+                <td class="pa3">displayBanner=Banner1</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/Topcashback-ha?displayBanner=Banner1" target="_blank">https://staging.holidayautos.com/Topcashback-ha?displayBanner=Banner1</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/boundless_argus?displayBanner=Banner1" target="_blank">https://staging.arguscarhire.com/boundless_argus?displayBanner=Banner1</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Affiliate landing with Banner 2</td>
+                <td class="pa3">displayBanner=Banner2</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/Topcashback-ha?displayBanner=Banner2" target="_blank">https://staging.holidayautos.com/Topcashback-ha?displayBanner=Banner2</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/boundless_argus?displayBanner=Banner2" target="_blank">https://staging.arguscarhire.com/boundless_argus?displayBanner=Banner2</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Affiliate landing with Banner 3</td>
+                <td class="pa3">displayBanner=Banner3</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/Topcashback-ha?displayBanner=Banner3" target="_blank">https://staging.holidayautos.com/Topcashback-ha?displayBanner=Banner3</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/boundless_argus?displayBanner=Banner3" target="_blank">https://staging.arguscarhire.com/boundless_argus?displayBanner=Banner3</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Affiliate landing page with no Banner</td>
+                <td class="pa3">displayBanner=noBanner</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/Topcashback-ha?displayBanner=noBanner" target="_blank">https://staging.holidayautos.com/Topcashback-ha?displayBanner=noBanner</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/boundless_argus?displayBanner=noBanner" target="_blank">https://staging.arguscarhire.com/boundless_argus?displayBanner=noBanner</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Location page with Banner 1</td>
+                <td class="pa3">displayBanner=Banner1</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/car-hire/france?displayBanner=Banner1" target="_blank">https://staging.holidayautos.com/car-hire/france?displayBanner=Banner1</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/car-hire/france?displayBanner=Banner1" target="_blank">https://staging.arguscarhire.com/car-hire/france?displayBanner=Banner1</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Location page with Banner 2</td>
+                <td class="pa3">displayBanner=Banner2</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/car-hire/france?displayBanner=Banner2" target="_blank">https://staging.holidayautos.com/car-hire/france?displayBanner=Banner2</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/car-hire/france?displayBanner=Banner2" target="_blank">https://staging.arguscarhire.com/car-hire/france?displayBanner=Banner2</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Location page with Banner 3</td>
+                <td class="pa3">displayBanner=Banner3</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/car-hire/france?displayBanner=Banner3" target="_blank">https://staging.holidayautos.com/car-hire/france?displayBanner=Banner3</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/car-hire/france?displayBanner=Banner3" target="_blank">https://staging.arguscarhire.com/car-hire/france?displayBanner=Banner3</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">Location page with no Banner</td>
+                <td class="pa3">displayBanner=noBanner</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/car-hire/france?displayBanner=noBanner" target="_blank">https://staging.holidayautos.com/car-hire/france?displayBanner=noBanner</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/car-hire/france?displayBanner=noBanner" target="_blank">https://staging.arguscarhire.com/car-hire/france?displayBanner=noBanner</a>
+                  </a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">PPC page with Banner 1</td>
+                <td class="pa3">displayBanner=Banner</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/ppc/birmingham.html?displayBanner=Banner1" target="_blank">https://staging.holidayautos.com/ppc/birmingham.html?displayBanner=Banner1</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/lp/car-hire/perugia-airport.html?displayBanner=Banner1" target="_blank">https://staging.arguscarhire.com/lp/car-hire/perugia-airport.html?displayBanner=Banner1</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">PPC page with Banner 2</td>
+                <td class="pa3">displayBanner=Banner2</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/ppc/birmingham.html?displayBanner=Banner2" target="_blank">https://staging.holidayautos.com/ppc/birmingham.html?displayBanner=Banner2</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/lp/car-hire/perugia-airport.html?displayBanner=Banner2" target="_blank">https://staging.arguscarhire.com/lp/car-hire/perugia-airport.html?displayBanner=Banner2</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">PPC page with Banner 3</td>
+                <td class="pa3">displayBanner=Banner3</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/ppc/birmingham.html?displayBanner=Banner3" target="_blank">https://staging.holidayautos.com/ppc/birmingham.html?displayBanner=Banner3</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/lp/car-hire/perugia-airport.html?displayBanner=Banner3" target="_blank">https://staging.arguscarhire.com/lp/car-hire/perugia-airport.html?displayBanner=Banner3</a>
+                </td>
+              </tr>
+              <tr class="stripe-dark">
+                <td class="pa3">PPC page with no Banner</td>
+                <td class="pa3">displayBanner=noBanner</td>
+                <td class="pa3"></td>
+                <td class="pa3">
+                  <a href="https://staging.holidayautos.com/ppc/birmingham.html?displayBanner=noBanner" target="_blank">https://staging.holidayautos.com/ppc/birmingham.html?displayBanner=noBanner</a>
+                </td>
+                <td class="pa3">
+                  <a href="https://staging.arguscarhire.com/lp/car-hire/perugia-airport.html?displayBanner=noBanner" target="_blank">https://staging.arguscarhire.com/lp/car-hire/perugia-airport.html?displayBanner=noBanner</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+    <footer class="main-footer">
+    </footer>
+  </div>
   <script src="scripts/options.js"></script>
 </body>
+
 </html>

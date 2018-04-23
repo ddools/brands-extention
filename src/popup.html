@@ -1,24 +1,92 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="styles/popup.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="app" class="popup-content">
-      <h1 class="app-name">Extension Boilerplate</h1>
 
-      <div id="display-container"></div>
+<head>
+  <meta charset="utf-8">
+  <link href="styles/popup.css" rel="stylesheet">
+</head>
 
-      <footer>
-        <p>
-          <small>
-            <a href="#" class="js-options">Options</a>
-          </small>
-        </p>
-      </footer>
+<body class="pa3 bg-moon-gray near-black">
+  <div id="app" class="w5 popup-content">
+    <div class="tc">
+      <img src="icons/brands128.png" />
     </div>
-    
-    <script src="scripts/popup.js"></script>
-  </body>
+
+    <form class="pa2 ">
+      <fieldset id="favorite_movies" class="bn">
+        <legend class="fw7 mb2">Flags</legend>
+        <div class="flex items-center mb2">
+          <select id="displayType" class="w-100 db h2 f6 bg-near-white ba b--sliver gray" name="">
+            <option value="">Display Type</option>
+            <option label="Normal engine" value="normalEngine" />
+            <option label="Full height engine" value="fullheightEngine" />
+            <option label="SVG banner 1" value="svgBanner1" />
+            <option label="SVG banner 2" value="svgBanner2" />
+            <option label="SVG banner 3" value="svgBanner3" />
+          </select>
+        </div>
+        <div id="displayBannerContainer" class="flex items-center mb2">
+          <select id="displayBanner" class="w-100 db h2 f6 bg-near-white ba b--sliver gray" name="">
+            <option value="">Banner Type</option>
+            <option label="Banner 1" value="Banner1" />
+            <option label="Banner 2" value="Banner2" />
+            <option label="Banner 3" value="Banner3" />
+            <option label="No banner" value="noBanner" />
+          </select>
+        </div>
+        <div class="flex items-center mb2">
+            <select id="environmentSelect" class="w-100 db h2 f6 bg-near-white ba b--sliver gray" name="">
+              <option label="Staging" value="staging" selected >Staging</option>
+              <option label="Production" value="www" />Production</option>
+            </select>
+          </div>
+          <div class="flex items-center mb2">
+            <select id="previewSelect" class="w-100 db h2 f6 bg-near-white ba b--sliver gray" name="">
+              <option label="Preview on" value="true" selected />
+              <option label="Preview off" value="false" />
+            </select>
+          </div>
+        <div class="flex items-center mb2">
+          <select id="trackingSelect" class="w-100 db h2 f6 bg-near-white ba b--sliver gray" name="">
+            <option label="Tracking on" value="on" selected />
+            <option label="Tracking Off" value="off" />
+          </select>
+        </div>
+        <div class="flex items-center mb2">
+          <div class="w-100">
+            <div class="w-50 fl">
+              <a class="f6 link dim br3 ba bw1 ph3 pv2 mb2 dib black bg-white js-ha" href="#0">View HA</a>
+            </div>
+            <div class="w-50 fl tr">
+              <a class="f6 link dim br3 ba bw1 ph3 pv2 mb2 dib black bg-white js-ach" href="#0">View ACH</a>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+
+
+<div id="version2">
+  <div id="pageTitle" class="b"></div>
+  <div id="pageUrl" class="gray"></div>
+</div>
+
+
+  </div>
+
+  <!-- <div id="display-container"></div> -->
+
+  <footer>
+    <p>
+      <small>
+        <a class="f6 link dim br2 ba ph1 pv1 mt2 mb2 dib black bg-white js-options fr" href="#0">Help</a>
+      </small>
+    </p>
+  </footer>
+  </div>
+
+  <script src="scripts/popup.js"></script>
+</body>
+
 </html>
